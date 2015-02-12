@@ -10,22 +10,23 @@ namespace week4_day3_paired.Models
         public string Title { get; set; }
         public DateTime DateCreated { get; set; }
 
-        public CharacterType Priority { get; set; }
+        public string Priority { get; set; }
 
-        public WorkItem(string title, DateTime dateCreated, CharacterType priority)
+        public WorkItem(string title, DateTime dateCreated, string priority)
         {
             Title = title;
-            DateCreated = DateCreated;
-            CharacterType = priority;
+            DateCreated = dateCreated;
+            Priority = priority;
 
         }
-
+/*
         public enum CharacterType
         { 
             Low, //0
             Medium, //1
             High //2
-        }
+        } 
+ */ 
 
     }
 }
