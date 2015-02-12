@@ -16,6 +16,7 @@
                     <td>@bugTask.Title</td>
                     <td>@bugTask.DateCreated</td>
                     <td>@bugTask.Priority</td>
+                    <td>@Html.ActionLink("Details", "Details", new { id = bugTask.ID }, new { @class = "btn btn-info" })</td>
                 </tr>
             }
         </tbody>

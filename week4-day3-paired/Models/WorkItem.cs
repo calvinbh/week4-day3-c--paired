@@ -12,12 +12,14 @@ namespace week4_day3_paired.Models
 
         public string Priority { get; set; }
 
-        public WorkItem(string title, DateTime dateCreated, string priority)
+        public int ID { get; set; }
+
+        public WorkItem(string title, DateTime dateCreated, string priority, int id)
         {
             Title = title;
             DateCreated = dateCreated;
             Priority = priority;
-
+            ID = id;
         }
 /*
         public enum CharacterType
