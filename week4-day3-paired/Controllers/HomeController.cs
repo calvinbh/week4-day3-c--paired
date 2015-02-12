@@ -11,23 +11,23 @@ namespace week4_day3_paired.Controllers
     {
         public ActionResult Index()
         {
-            List<WorkItem> BugsTaks = new List<WorkItem> {
-                new Task(" Fix Potential Security Exposures ", DateTime, "High"),
-                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iCloud ", DateTime, "Low"),
-                new Task(" Improve Power Comsumption, Battery Life ", DateTime, "Medium"),
-                new Bug("iMovie 9.0.8 fails with error when exporting to QuickTime ", DateTime, "Low"),
-                new Bug("OS X 10.8.3 (12D78): Photo app crashed ", DateTime, "Low"),
-                new Task(" New Feature ", DateTime, "Low"),
-                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iCloud ", DateTime, "Low"),
-                new Task(" Fix comestic issues ", DateTime, "Low"),
-                new Task(" Improve responsiveness of app ", DateTime, "Medium"),
-                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iMail ", DateTime, "Low"),
-                new Task(" Improve new feature ", DateTime, "Low"),
-                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iCloud ", DateTime, "Low"),
+            List<WorkItem> BugsTasks = new List<WorkItem> {
+                new TaskTodo(" Fix Potential Security Exposures ", DateTime.Now, "High"),
+                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iCloud ", DateTime.Now, "Low"),
+                new TaskTodo(" Improve Power Comsumption, Battery Life ", DateTime.Now, "Medium"),
+                new Bug("iMovie 9.0.8 fails with error when exporting to QuickTime ", DateTime.Now, "Low"),
+                new Bug("OS X 10.8.3 (12D78): Photo app crashed ", DateTime.Now, "Low"),
+                new TaskTodo(" New Feature ", DateTime.Now, "Low"),
+                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iCloud ", DateTime.Now, "Low"),
+                new TaskTodo(" Fix comestic issues ", DateTime.Now, "Low"),
+                new TaskTodo(" Improve responsiveness of app ", DateTime.Now, "Medium"),
+                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iMail ", DateTime.Now, "Low"),
+                new TaskTodo(" Improve new feature ", DateTime.Now, "Low"),
+                new Bug("OS X 10.8.3 (12D78): Finder crashed connecting to iCloud ", DateTime.Now, "Low"),
 
             };
 
-            return View();
+            return View(BugsTasks);
         }
 
         public ActionResult About()
