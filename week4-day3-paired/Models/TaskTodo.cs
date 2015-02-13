@@ -10,7 +10,7 @@ namespace week4_day3_paired.Models
         public string Description { get; set; }
 
         public TaskTodo(string title, DateTime dateCreated, string priority, int id)
-            :base(title, dateCreated, priority, id)
+            :base(title, dateCreated, priority, id, CharacterType.TaskTodo)
         {
             Description = Description;
         }

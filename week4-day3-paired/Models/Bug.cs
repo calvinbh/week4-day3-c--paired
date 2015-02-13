@@ -10,7 +10,7 @@ namespace week4_day3_paired.Models
         public string StepsToReproduce { get; set; }
 
         public Bug(string title, DateTime dateCreated, string priority, int id)
-            :base(title, dateCreated, priority, id)
+            :base(title, dateCreated, priority, id, CharacterType.Bug)
         {
             StepsToReproduce = StepsToReproduce;
         }

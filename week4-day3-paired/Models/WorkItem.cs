@@ -14,21 +14,28 @@ namespace week4_day3_paired.Models
 
         public int ID { get; set; }
 
-        public WorkItem(string title, DateTime dateCreated, string priority, int id)
+        public CharacterType type { get; set; }
+
+        public WorkItem(string title, DateTime dateCreated, string priority, int id, CharacterType type)
         {
             Title = title;
             DateCreated = dateCreated;
             Priority = priority;
             ID = id;
+            CharacterType = type;
         }
-/*
+
+        public WorkItem()
+        {
+
+        }
+
         public enum CharacterType
         { 
-            Low, //0
-            Medium, //1
-            High //2
+            Bug, //0
+            TaskTodo, //1
         } 
- */ 
+
 
     }
 }

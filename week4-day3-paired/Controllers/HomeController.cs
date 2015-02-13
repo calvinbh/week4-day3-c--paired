@@ -53,5 +53,16 @@ namespace week4_day3_paired.Controllers
                 return View(model);
             }
         }
+
+        public ActionResult ShowBugs()
+        {
+            List<Bug> model = new List<Bug>();
+            foreach (var bug in BugsTasks )
+            {
+                if ( CharacterType.Bug )
+)
+
+            }
+        }
     }
 }
